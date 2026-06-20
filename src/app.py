@@ -1,5 +1,6 @@
 def tinh_bmi(can_nang, chieu_cao):
-    return can_nang / (chieu_cao ** 2)
+    return can_nang / (chieu_cao**2)
+
 
 def phan_loai_bmi(bmi):
     if bmi < 18.5:
@@ -11,6 +12,7 @@ def phan_loai_bmi(bmi):
     else:
         return "Béo phì"
 
+
 def main():
     print("=== Chương trình tính BMI ===")
     can_nang = float(input("Nhập cân nặng (kg): "))
@@ -21,6 +23,8 @@ def main():
 
     print(f"\nBMI của bạn: {bmi:.2f}")
     print(f"Phân loại: {phan_loai}")
+    print("\nCảm ơn bạn đã sử dụng chương trình!")
+
 
 if __name__ == "__main__":
     main()
